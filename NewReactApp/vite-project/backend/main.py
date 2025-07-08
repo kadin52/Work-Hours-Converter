@@ -1,0 +1,22 @@
+import os
+from flask import Flask
+from flask_cors import CORS
+
+from routes import register_routes
+from vision_service import extract_text
+from file_handler import create_text_download
+
+
+print("before environ")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"E:\NewReactApp\vite-project\backend\stable-being-455902-h1-ad26de1b685b.json"
+print("after environ")
+app = Flask(__name__)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY")
+CORS(app, supports_credentials=True)
+
+
+register_routes(app)
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=8080)

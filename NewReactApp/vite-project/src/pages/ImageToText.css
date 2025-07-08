@@ -1,0 +1,24 @@
+.container {
+    /* font-size: 22px; */
+
+}
+
+.image-upload-container {
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: .10rem dashed rgb(204, 35, 35); */
+    height: calc(300rem / 16);
+    
+}
+
+.text-center {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
+.text-center h2 {
+    
+}
+
