@@ -24,21 +24,7 @@ def convert_text_to_dict(text) -> dict:
                 
     return group
 
-# def convert_text_to_csv(text):
-#     hours_dict = convert_text_to_dict(text)
-#     file_name = "hours.csv"
-#     fields = ['Name', 'HourA', 'HourB']
 
-#     with open(file_name, mode='w') as csvfile:
-#         writer = csv.DictWriter(csvfile, fieldnames=fields)
-#         writer.writeheader()
-
-#         for name, hour_pairs in hours_dict.items():
-#             for hour_pair in hour_pairs:      
-#                 writer.writerow({'Name': name, 'Start': hour_pair[0], 'End': hour_pair[1]})
-#                 print(f"Writing row: {name}, {hour_pair[0]}, {hour_pair[1]}")
-
-#     return file_name
 
 def convert_text_to_csv(text):
     hours_dict = convert_text_to_dict(text)

@@ -5,9 +5,9 @@ import "./App.css";
 import ImageUpload from "./components/ImageUpload";
 import Navbar from "./components/Navbar";
 import ImageToText from "./pages/ImageToText";
+import ImageToCsv from "./pages/ImageToCSV";
+import DownloadFile from "./components/DownloadFile";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
@@ -17,7 +17,16 @@ function App() {
           <Routes>
             <Route path="/" element={<ImageUpload />} />
             <Route path="/toText" element={<ImageToText />} />
-            <Route path="/toCsv" element={<ImageUpload />} />
+            <Route path="/toCsv" element={<ImageToCsv />} />
+
+            <Route
+              path="/download-text"
+              element={<DownloadFile fileType="text" />}
+            />
+            <Route
+              path="/download-csv"
+              element={<DownloadFile fileType="csv" />}
+            />
           </Routes>
         </div>
       </BrowserRouter>

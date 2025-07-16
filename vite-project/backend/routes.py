@@ -8,13 +8,12 @@ text = "PlaceHolder text for testing purposes"
 def register_routes(app):
     @app.route('/upload', methods=['POST'])
     def convert_image_to_text():
-        # text,error = extract_text()
-        # if error:
-        #     return jsonify({'success': False, 'error': str(error)})
+        text,error = extract_text()
+        if error:
+            return jsonify({'success': False, 'error': str(error)})
         
         session['extracted_text'] = text
         print(f"Extracted text: {session['extracted_text']}")
-        print(jsonify({'success': True, 'text': text}))
 
         return jsonify({'success': True, 'text': text})
 
@@ -23,15 +22,14 @@ def register_routes(app):
 
     @app.route('/download-text', methods=['GET'])
     def download_text_file():
-        # if error:
-        #     return jsonify({'success': False, 'error': str(error)})
-        
-        # text = session.get('extracted_text')
         text = session['extracted_text']
         print(f"Text to download: {text}")
-
-        print(jsonify({'success': True, 'text': text}))
         return create_text_download(text)
         
-
+    @app.route('/download-csv', methods=['GET'])
+    def download_csv_file():
+        text = session['extracted_text']
+        print(f"Text to download as CSV: {text}")
+        return create_csv_download(text)
+        
 

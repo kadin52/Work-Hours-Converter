@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import FileService from "../services/FileService";
 import ImageFile from "../types/ImageFile";
+import { useNavigate } from "react-router-dom";
 import "./ImageUpload.css";
 
 interface ImageUploadProps {
-  uploadSuccess?: () => void;
+  fileType?: "text" | "csv";
 }
 
-const ImageUpload = (props: ImageUploadProps) => {
+const ImageUpload = ({ fileType }: ImageUploadProps) => {
   const [currentImage, setCurrentImage] = useState<File>();
   const [previewImage, setPreviewImage] = useState<string>("");
   const [imageInfo, setImageInfo] = useState<ImageFile[]>([]);
+  const navigate = useNavigate();
 
   const selectImage = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFiles = event.target.files as FileList;
@@ -31,10 +33,7 @@ const ImageUpload = (props: ImageUploadProps) => {
       // const files = await FileService.getFiles();
       // setImageInfo(files.data);
 
-      if (props.uploadSuccess) {
-        console.log("Upload successful, calling uploadSuccess callback");
-        props.uploadSuccess();
-      }
+      navigate(`/download-${fileType}`);
     } catch (error) {
       console.error("Error uploading file:", error);
     }

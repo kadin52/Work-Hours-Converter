@@ -12,21 +12,28 @@ const upload = (file: File): Promise<any> => {
   });
 };
 
-// const downloadText = (): Promise<any> => {
-//   return http.get("/download-text", {
-//     responseType: "blob",
-//     withCredentials: true,
-//   });
-// };
+const downloadText = (): Promise<Blob> => {
+  return http.get("/download-text", {
+    responseType: "blob",
+    withCredentials: true,
+  });
+};
+
+const downloadCsv = (): Promise<Blob> => {
+  return http.get("/download-csv", {
+    responseType: "blob",
+    withCredentials: true,
+  });
+};
 
 // const getFiles = (): Promise<any> => {
 //   return http.get("/files");
 // };
 
 const FileService = {
+  downloadText,
+  downloadCsv,
   upload,
-  // downloadText,
-  // getFiles,
 };
 
 export default FileService;
