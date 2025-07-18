@@ -5,9 +5,9 @@
 
 .image-upload-container {
     display:flex;
-    /* align-items: center; */
+   
     justify-content: center;
-    /* border: .10rem dashed rgb(204, 35, 35); */
+    
     height: calc(300rem / 16);
     
 }

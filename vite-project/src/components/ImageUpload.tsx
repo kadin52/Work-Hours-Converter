@@ -68,13 +68,15 @@ const ImageUpload = ({ fileType }: ImageUploadProps) => {
           </label>
         </div>
 
-        <div className="preview-container">
-          {previewImage && (
-            <img className="preview" src={previewImage} alt="preview" />
-          )}
-        </div>
+        {previewImage && (
+          <div className="preview-container">
+            {previewImage && (
+              <img className="preview" src={previewImage} alt="preview" />
+            )}
+          </div>
+        )}
 
-        <div className="download-container">
+        <div className="upload-container">
           {currentImage != null && (
             <>
               <p>{currentImage.name}</p>

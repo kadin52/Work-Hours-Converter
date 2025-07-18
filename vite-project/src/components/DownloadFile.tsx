@@ -8,14 +8,14 @@ const DownloadFile = ({ fileType }: { fileType: string }) => {
   return (
     <>
       <div className="text-center">
-        <h3>Download the file</h3>
+        <h3>Your file is ready for download</h3>
 
         <a
           href={`${baseURL}/download-${fileType}`}
           className="btn btn-primary"
           download={`extracted_file.${fileType}`}
         >
-          Download Text File
+          Download {fileType} File
         </a>
       </div>
     </>

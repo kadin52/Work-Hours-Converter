@@ -17,14 +17,8 @@ const ImageToText: React.FC = () => {
       </div>
 
       <div className="image-upload-container">
-        {/* <ImageUpload uploadSuccess={handleUploadSuccess} /> */}
         <ImageUpload fileType="text" />
       </div>
-      {/* {showDownload && (
-        <div>
-          <DownloadFile />
-        </div>
-      )} */}
     </div>
   );
 };
