@@ -1,32 +1,29 @@
 
-.container {
-    
-}
-
 
 .image-upload-container {
     display:flex;
-
     justify-content: center;
     align-items: center;
     border: .10rem dashed #882983; 
-    min-height: calc(300rem / 16);
+    /* min-height: 10rem; */
+    
     max-width: 50rem;
     margin: 0 auto;
-    padding: 2rem;
-    /* flex-direction: column; */
+    
+  
 
     
 }
 
 .image-upload-container:has(.preview-container) {
     border: none;
+    align-items: flex-start;
     
 }
 
 .text-center {
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     
 }
 

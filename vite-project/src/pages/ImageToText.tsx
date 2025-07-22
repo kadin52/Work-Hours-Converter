@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ImageUpload from "../components/ImageUpload";
-import DownloadFile from "../components/DownloadFile";
+import DownloadFile from "./DownloadFile";
 import "./SharedImageTo.css";
 const ImageToText: React.FC = () => {
   const [showDownload, setShowDownload] = useState(false);

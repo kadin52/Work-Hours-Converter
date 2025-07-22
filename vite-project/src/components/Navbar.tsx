@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link to="/" className="navbar-brand">
+    <nav className="navbar navbar-expand-lg navbar-light bg-custom-color">
+      <div className="navbar-brand">
         <div className="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const Navbar = () => {
           </svg>
         </div>
         Personal Hours Converter
-      </Link>
+      </div>
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
           <Link to="/toText" className="nav-link">
@@ -31,11 +31,6 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/toCsv" className="nav-link">
             Img to CSV
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-link">
-            About
           </Link>
         </li>
       </ul>

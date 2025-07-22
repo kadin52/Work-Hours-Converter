@@ -7,10 +7,10 @@
 }
 
 .nav-item{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding-left: .8rem;
     padding-right:.8rem;
-    color: darkgray;
+    color: #000000;
 }
 
 .logo{
@@ -18,4 +18,9 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+
+.navbar.bg-custom-color {
+    background-color: #b9b9b9;
 }

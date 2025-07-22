@@ -6,7 +6,7 @@ import ImageUpload from "./components/ImageUpload";
 import Navbar from "./components/Navbar";
 import ImageToText from "./pages/ImageToText";
 import ImageToCsv from "./pages/ImageToCSV";
-import DownloadFile from "./components/DownloadFile";
+import DownloadFile from "./pages/DownloadFile";
 function App() {
   return (
     <>
@@ -15,7 +15,6 @@ function App() {
           <Navbar />
 
           <Routes>
-            <Route path="/" element={<ImageUpload />} />
             <Route path="/toText" element={<ImageToText />} />
             <Route path="/toCsv" element={<ImageToCsv />} />
 
@@ -27,6 +26,7 @@ function App() {
               path="/download-csv"
               element={<DownloadFile fileType="csv" />}
             />
+            <Route path="/" element={<ImageUpload fileType="text" />} />
           </Routes>
         </div>
       </BrowserRouter>
