@@ -25,7 +25,7 @@ function App() {
               path="/download-csv"
               element={<DownloadFile fileType="csv" />}
             />
-            <Route path="/" element={<ImageUpload fileType="text" />} />
+            <Route path="/" element={<ImageToCsv />} />
           </Routes>
         </div>
       </BrowserRouter>
