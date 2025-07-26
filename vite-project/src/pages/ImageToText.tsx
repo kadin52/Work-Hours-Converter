@@ -1,14 +1,7 @@
-import { useState } from "react";
 import ImageUpload from "../components/ImageUpload";
-import DownloadFile from "./DownloadFile";
+import InfoSection from "../components/About";
 import "./SharedImageTo.css";
-const ImageToText: React.FC = () => {
-  const [showDownload, setShowDownload] = useState(false);
-
-  const handleUploadSuccess = () => {
-    setShowDownload(true);
-  };
-
+const ImageToText = () => {
   return (
     <div className="container">
       <div className="text-center ">
@@ -19,6 +12,7 @@ const ImageToText: React.FC = () => {
       <div className="image-upload-container">
         <ImageUpload fileType="text" />
       </div>
+      <InfoSection />
     </div>
   );
 };

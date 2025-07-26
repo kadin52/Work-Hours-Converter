@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, Response, session
 from vision_service import extract_text
 from file_handler import create_text_download, create_csv_download
 
-text = "PlaceHolder text for testing purposes"
+text = "PlaceHolder text"
 
 
 def register_routes(app):

@@ -8,7 +8,7 @@ from file_handler import create_text_download
 
 
 print("before environ")
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"E:\NewReactApp\vite-project\backend\stable-being-455902-h1-ad26de1b685b.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"E:\Work-Hours-Converter\vite-project\backend\stable-being-455902-h1-ad26de1b685b.json"
 print("after environ")
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY")

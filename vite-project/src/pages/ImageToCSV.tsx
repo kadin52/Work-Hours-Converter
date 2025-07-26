@@ -1,18 +1,24 @@
-import { useState } from "react";
 import ImageUpload from "../components/ImageUpload";
-import DownloadFile from "./DownloadFile";
+
+import InfoSection from "../components/About";
 import "./SharedImageTo.css";
-const ImageToCSV: React.FC = () => {
+const ImageToCSV = () => {
   return (
     <div className="container">
       <div className="text-center">
         <h1>Convert Image to CSV</h1>
-        <p>Upload an image to download the csv file from the extracted text</p>
+        <p>
+          Upload an image to download the csv file from the extracted text{" "}
+          <br />
+          Formatting example can be seen <a href="">here.</a>
+        </p>
       </div>
 
       <div className="image-upload-container">
         <ImageUpload fileType="csv" />
       </div>
+
+      <InfoSection />
     </div>
   );
 };

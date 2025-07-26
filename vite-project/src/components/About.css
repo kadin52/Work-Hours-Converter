@@ -1,0 +1,25 @@
+.info-section-container {
+    display: flex;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.paragraph-column {
+    width: 33%;
+    padding: 2rem;
+
+    
+    text-align:justify;
+    
+}
+
+.paragraph-column h3 {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.paragraph-column p {
+    font-size: 1.3rem;
+
+}
