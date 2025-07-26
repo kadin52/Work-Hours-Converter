@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FileService from "../services/FileService";
-
+import ImageFile from "../types/ImageFile";
 import { useNavigate } from "react-router-dom";
 import "./ImageUpload.css";
 
