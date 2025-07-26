@@ -15,7 +15,10 @@ if not credentials_json:
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY")
-CORS(app, supports_credentials=True)
+CORS(app, origins=[
+    "https://work-hours-frontend.onrender.com",
+    "http://localhost:5173"
+], supports_credentials=True)
 
 
 register_routes(app)
