@@ -1,5 +1,3 @@
-import { useState } from "react";
-import FileService from "../services/FileService";
 import http from "../http-common";
 import "./DownloadFile.css";
 const DownloadFile = ({ fileType }: { fileType: string }) => {

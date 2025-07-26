@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import FileService from "../services/FileService";
 import ImageFile from "../types/ImageFile";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ interface ImageUploadProps {
 const ImageUpload = ({ fileType }: ImageUploadProps) => {
   const [currentImage, setCurrentImage] = useState<File>();
   const [previewImage, setPreviewImage] = useState<string>("");
-  const [imageInfo, setImageInfo] = useState<ImageFile[]>([]);
+
   const navigate = useNavigate();
 
   const selectImage = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,10 +28,7 @@ const ImageUpload = ({ fileType }: ImageUploadProps) => {
     if (!currentImage) return;
 
     try {
-      const response = await FileService.upload(currentImage);
-
-      // const files = await FileService.getFiles();
-      // setImageInfo(files.data);
+      await FileService.upload(currentImage);
 
       navigate(`/download-${fileType}`);
     } catch (error) {
