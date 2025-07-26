@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import ImageUpload from "./components/ImageUpload";
 import Navbar from "./components/Navbar";
 import ImageToText from "./pages/ImageToText";
 import ImageToCsv from "./pages/ImageToCSV";
