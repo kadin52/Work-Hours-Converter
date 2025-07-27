@@ -7,6 +7,10 @@ def extract_text():
     if 'file' not in request.files:
         return "", FileNotFoundError
     client = vision.ImageAnnotatorClient()
+
+
+
+
     file = request.files['file']
     print(f"Request: {request}")
     print(f"File: {file}")
