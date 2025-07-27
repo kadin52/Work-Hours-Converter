@@ -16,6 +16,8 @@ CORS(app, origins=[
     "http://localhost:5173"
 ], supports_credentials=True)
 
+app.config['SESSION_COOKIE_SAMESITE'] = 'None'
+app.config['SESSION_COOKIE_SECURE'] = True
 
 register_routes(app, google_credentials)
 
