@@ -5,15 +5,10 @@ from flask_cors import CORS
 from routes import register_routes
 from vision_service import extract_text
 from file_handler import create_text_download
-import json
+from authentication import setup_authentication
 
-credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
-if not credentials_json:
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"E:\Work-Hours-Converter\vite-project\backend\stable-being-455902-h1-ad26de1b685b.json"
 
-print(f"Using Google credentials from: {os.environ['GOOGLE_APPLICATION_CREDENTIALS']}")
-    
-
+google_credentials = setup_authentication()
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 CORS(app, origins=[
@@ -22,7 +17,7 @@ CORS(app, origins=[
 ], supports_credentials=True)
 
 
-register_routes(app)
+register_routes(app, google_credentials)
 
 
 if __name__ == "__main__":

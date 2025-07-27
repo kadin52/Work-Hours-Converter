@@ -3,13 +3,10 @@ from PIL import Image
 from google.cloud import vision
 
 
-def extract_text():
+def extract_text(google_credentials=None):
     if 'file' not in request.files:
         return "", FileNotFoundError
-    client = vision.ImageAnnotatorClient()
-
-
-
+    client = vision.ImageAnnotatorClient(credentials=google_credentials)
 
     file = request.files['file']
     print(f"Request: {request}")

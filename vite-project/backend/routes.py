@@ -5,10 +5,10 @@ from file_handler import create_text_download, create_csv_download
 text = "PlaceHolder text"
 
 
-def register_routes(app):
+def register_routes(app, google_credentials=None):
     @app.route('/upload', methods=['POST'])
     def convert_image_to_text():
-        text,error = extract_text()
+        text,error = extract_text(google_credentials)
         if error:
             return jsonify({'success': False, 'error': str(error)})
         
