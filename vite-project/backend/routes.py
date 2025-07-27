@@ -24,7 +24,7 @@ def register_routes(app, google_credentials=None):
 
     @app.route('/download-text', methods=['GET'])
     def download_text_file():
-        text = session.get['extracted_text']
+        text = session.get('extracted_text')
         if not text:
             return jsonify({
                 "error": "no session"
@@ -34,8 +34,8 @@ def register_routes(app, google_credentials=None):
         
     @app.route('/download-csv', methods=['GET'])
     def download_csv_file():
-        text = session.get['extracted_text']
-        text = session.get['extracted_text']
+       
+        text = session.get('extracted_text')
         if not text:
             return jsonify({
                 "error": "no session"
