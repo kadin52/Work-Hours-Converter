@@ -10,10 +10,11 @@ def register_routes(app, google_credentials=None):
     def convert_image_to_text():
         text,error = extract_text(google_credentials)
         if error:
+            print(f"Error extracting text: {error}")
             return jsonify({'success': False, 'error': str(error)})
         
         session['extracted_text'] = text
-        session.permanent = True
+  
         print(f"Extracted text: {session['extracted_text']}")
 
         return jsonify({'success': True, 'text': text})
@@ -23,13 +24,22 @@ def register_routes(app, google_credentials=None):
 
     @app.route('/download-text', methods=['GET'])
     def download_text_file():
-        text = session['extracted_text']
+        text = session.get['extracted_text']
+        if not text:
+            return jsonify({
+                "error": "no session"
+            })
         print(f"Text to download: {text}")
         return create_text_download(text)
         
     @app.route('/download-csv', methods=['GET'])
     def download_csv_file():
-        text = session['extracted_text']
+        text = session.get['extracted_text']
+        text = session.get['extracted_text']
+        if not text:
+            return jsonify({
+                "error": "no session"
+            })
         print(f"Text to download as CSV: {text}")
         return create_csv_download(text)
         
