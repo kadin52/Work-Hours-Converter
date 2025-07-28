@@ -10,7 +10,7 @@ const ImageToCSV = () => {
         <p>
           Upload an image to download the csv file from the extracted text
           <br />
-          Formatting example can be seen
+          Formatting example can be seen{" "}
           <a
             href="https://github.com/kadin52/Work-Hours-Converter"
             target="_blank"

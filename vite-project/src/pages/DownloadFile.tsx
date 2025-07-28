@@ -1,4 +1,5 @@
 import http from "../http-common";
+import { Link } from "react-router-dom";
 import "./DownloadFile.css";
 const DownloadFile = ({ fileType }: { fileType: string }) => {
   const baseURL = http.defaults.baseURL;
@@ -31,7 +32,7 @@ const DownloadFile = ({ fileType }: { fileType: string }) => {
           Download {fileType.toUpperCase()}
         </a>
         <p>
-          <a href={`/to${capitalizedFileType}`}> Click here </a>
+          <Link to={`/to${capitalizedFileType}`}> Click here </Link>
           to convert more
         </p>
       </div>
