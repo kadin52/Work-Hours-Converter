@@ -8,9 +8,16 @@ const ImageToCSV = () => {
       <div className="text-center">
         <h1>Convert Image to CSV</h1>
         <p>
-          Upload an image to download the csv file from the extracted text{" "}
+          Upload an image to download the csv file from the extracted text
           <br />
-          Formatting example can be seen <a href="">here.</a>
+          Formatting example can be seen
+          <a
+            href="https://github.com/kadin52/Work-Hours-Converter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here.
+          </a>
         </p>
       </div>
 

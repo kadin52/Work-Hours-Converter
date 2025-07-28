@@ -2,7 +2,8 @@ import http from "../http-common";
 import "./DownloadFile.css";
 const DownloadFile = ({ fileType }: { fileType: string }) => {
   const baseURL = http.defaults.baseURL;
-
+  const capitalizedFileType =
+    fileType.charAt(0).toUpperCase() + fileType.slice(1);
   return (
     <>
       <div className="text-center">
@@ -30,7 +31,7 @@ const DownloadFile = ({ fileType }: { fileType: string }) => {
           Download {fileType.toUpperCase()}
         </a>
         <p>
-          <a href={`/to${fileType}`}> Click here </a>
+          <a href={`/to${capitalizedFileType}`}> Click here </a>
           to convert more
         </p>
       </div>

@@ -26,3 +26,5 @@ dist-ssr
 .history/
 backend/__pycache__/
 backend/*.json
+**/__pycache__/
+vite-project/backend/*.json
