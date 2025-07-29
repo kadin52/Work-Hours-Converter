@@ -5,7 +5,7 @@ from io import StringIO
 def parse_times(text):
     
     meridiem = ["am", "pm", "AM", "PM"]
-    lines = [line.strip() for line in text.splitlines() if line.strip()] # Remove empty lines
+    lines = [line.strip() for line in text.splitlines() if line.strip()] 
     edited_lines = []
     for xx, line in enumerate(lines):
         spaces_removed = "".join(line.lower().split())
@@ -13,7 +13,7 @@ def parse_times(text):
         if spaces_removed in meridiem:
             edited_lines[xx-1] += line
         else:
-            edited_lines.append(line)
+            edited_lines.append(line.replace(" ",""))
 
     return edited_lines
 
