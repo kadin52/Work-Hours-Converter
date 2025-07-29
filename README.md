@@ -33,24 +33,24 @@ is the proper format for entry.
 
 ![Select a File](https://github.com/user-attachments/assets/4abb0a6e-e386-432d-990b-2e4fbe159d22) 
 1. **Select a File:**  
-    ![Upload the File](https://github.com/user-attachments/assets/0957cacf-8819-4947-8e52-ff1686590a02)  
+    ![Select Button](https://github.com/user-attachments/assets/0957cacf-8819-4947-8e52-ff1686590a02)  
    Choose your image file.
 
 2. **Upload the File:**  
-   ![Download the Converted File](https://github.com/user-attachments/assets/bbfddd85-e696-4765-8c8d-1ac4a4bb2bec) 
+   ![Upload Button](https://github.com/user-attachments/assets/bbfddd85-e696-4765-8c8d-1ac4a4bb2bec) 
    Click on upload to process the image.
 
 3. **Download the Converted File:**  
-   ![Import CSV Into Tool](https://github.com/user-attachments/assets/05637aff-9433-44d5-9c5e-41aa65ed76ca) 
+   ![Download Button](https://github.com/user-attachments/assets/05637aff-9433-44d5-9c5e-41aa65ed76ca) 
    Save the converted CSV or text file.
 
 4. **Import the CSV into Your Tool:**  
-   
+   ![CSV Tool](<img width="383" height="165" alt="image" src="https://github.com/user-attachments/assets/4ff9d33c-4fb2-4df3-989e-e85a7e0633b4" />)
    Load the CSV into Excel, Google Sheets, or another tool.
-  
+   
    **Text-only Option:**  
    If you choose the text conversion option:  
    ![Text Option](https://github.com/user-attachments/assets/c36d6a91-b106-4aba-ad5e-9fdd8555156b)
 
-<img width="310" height="451" alt="image" src="https://github.com/user-attachments/assets/c36d6a91-b106-4aba-ad5e-9fdd8555156b" />
+
 
