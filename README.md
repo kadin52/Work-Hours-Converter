@@ -45,7 +45,8 @@ is the proper format for entry.
    Save the converted CSV or text file.
 
 4. **Import the CSV into Your Tool:**  
-   ![CSV Tool](<img width="383" height="165" alt="image" src="https://github.com/user-attachments/assets/4ff9d33c-4fb2-4df3-989e-e85a7e0633b4" />)
+   ![CSV Tool]<img width="383" height="165" alt="image" src="https://github.com/user-attachments/assets/cd672a27-54ff-4a73-968b-143b825e2032" />
+
    Load the CSV into Excel, Google Sheets, or another tool.
    
    **Text-only Option:**  
