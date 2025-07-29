@@ -7,9 +7,9 @@
 - **Download File:** Click a button to download the generated file.
 
 ## Technologies Used:
-  Python - Flask
-  Javascript - React
-  CSS
+  Python - Flask <br />
+  Javascript - React <br />
+  CSS<br />
 
 
 ## Deployment
