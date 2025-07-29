@@ -1,10 +1,26 @@
 # Work Hours Converter
 
-A personal tool that uses Google Cloud API Vision service to convert hand-written start and end times to csv or txt file.\
-When converting to a .csv, python backend should parse through the text from the Vision API, and sort the names and hours to allow for easy calculation in Excel or Google Sheets.\
-When converting to a .txt, the python backend should only have to return the results from Vision API.
+## Features
 
-# Technologies Used:
+- **Image Upload:** Upload an image and extract text.
+- **File Conversion:** Convert the extracted text to CSV (or plain text). A CSV file will have names and hours groups accordingly.
+- **Download File:** Click a button to download the generated file.
+
+## Technologies Used:
   Python - Flask
   Javascript - React
   CSS
+
+
+## Deployment
+
+The project is deployed on Render:
+- **Frontend:** [https://work-hours-frontend.onrender.com](https://work-hours-frontend.onrender.com)
+- **Backend:** [https://work-hours-backend.onrender.com](https://work-hours-backend.onrender.com)
+
+
+## Example Submission for CSV
+
+
+
+
