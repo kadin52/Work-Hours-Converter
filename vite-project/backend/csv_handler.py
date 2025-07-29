@@ -11,7 +11,7 @@ def parse_times(text):
         spaces_removed = "".join(line.lower().split())
 
         if spaces_removed in meridiem:
-            edited_lines[xx-1] += line
+            edited_lines[xx-1] += spaces_removed
         else:
             edited_lines.append(line.replace(" ",""))
 
