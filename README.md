@@ -29,19 +29,27 @@ is the proper format for entry.
 ## To work on
 - Avoid refreshing or using back or forward arrows on this website. If it happens just reenter the from the frontend link https://work-hours-frontend.onrender.com 
 
-## Example Usage
+## Instructions
 
-<img width="1031" height="882" alt="image" src="https://github.com/user-attachments/assets/4abb0a6e-e386-432d-990b-2e4fbe159d22" />
-Select a file.<br />
-<img width="816" height="61" alt="image" src="https://github.com/user-attachments/assets/da28a2a5-6741-41fa-b2aa-ab38f53cfa21" />
-Upload the file.<br />
-<img width="436" height="126" alt="image" src="https://github.com/user-attachments/assets/4d6de9e7-1a22-4cce-a360-dfa0c267742d" />
-Download the converted file.<br />
-<img width="815" height="508" alt="image" src="https://github.com/user-attachments/assets/05637aff-9433-44d5-9c5e-41aa65ed76ca" />
-Import the csv into a tool of your choice.<br />
-<img width="372" height="160" alt="image" src="https://github.com/user-attachments/assets/f56f4b4c-8959-496e-ab2f-ed3e969f8a79" />
+1. **Select a File:**  
+   ![Select a File](https://github.com/user-attachments/assets/4abb0a6e-e386-432d-990b-2e4fbe159d22)  
+   Choose your image file.
 
+2. **Upload the File:**  
+   ![Upload the File](https://github.com/user-attachments/assets/0957cacf-8819-4947-8e52-ff1686590a02)  
+   Click on upload to process the image.
 
-If you choose the text option<br />
+3. **Download the Converted File:**  
+   ![Download the Converted File](https://github.com/user-attachments/assets/bbfddd85-e696-4765-8c8d-1ac4a4bb2bec)  
+   Save the converted CSV or text file.
+
+4. **Import the CSV into Your Tool:**  
+   ![Import CSV Into Tool](https://github.com/user-attachments/assets/05637aff-9433-44d5-9c5e-41aa65ed76ca)  
+   Load the CSV into Excel, Google Sheets, or another tool.
+
+   **Text-only Option:**  
+   If you choose the text conversion option:  
+   ![Text Option](https://github.com/user-attachments/assets/c36d6a91-b106-4aba-ad5e-9fdd8555156b)
+
 <img width="310" height="451" alt="image" src="https://github.com/user-attachments/assets/c36d6a91-b106-4aba-ad5e-9fdd8555156b" />
 
