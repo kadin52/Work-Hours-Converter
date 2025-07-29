@@ -28,3 +28,4 @@ backend/__pycache__/
 backend/*.json
 **/__pycache__/
 vite-project/backend/*.json
+vite-project/backend/.env
