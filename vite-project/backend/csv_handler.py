@@ -1,13 +1,30 @@
 import csv
 from collections import defaultdict
 from io import StringIO
+
+def parse_times(text):
+    
+    meridiem = ["am", "pm", "AM", "PM"]
+    lines = [line.strip() for line in text.splitlines() if line.strip()] # Remove empty lines
+    edited_lines = []
+    for xx, line in enumerate(lines):
+        spaces_removed = "".join(line.lower().split())
+
+        if spaces_removed in meridiem:
+            edited_lines[xx-1] += line
+        else:
+            edited_lines.append(line)
+
+    return edited_lines
+
+
 def convert_text_to_dict(text) -> dict:
-    time_chars = '0123456789:'
-    lines = [line.strip() for line in text.split('\n') if line.strip()]
-    name = ''
-    hours = []
+    
+    lines = parse_times(text)
+
     group = defaultdict(list)
     
+
     xx = 0
     while xx < len(lines):
         line = lines[xx]
