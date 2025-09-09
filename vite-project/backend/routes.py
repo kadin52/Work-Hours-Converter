@@ -14,9 +14,7 @@ def register_routes(app, google_credentials=None):
             return jsonify({'success': False, 'error': str(error)})
         
         session['extracted_text'] = text
-  
         print(f"Extracted text: {session['extracted_text']}")
-
         return jsonify({'success': True, 'text': text}), 200
 
         
