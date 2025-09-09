@@ -1,19 +1,8 @@
 import ImageUpload from "../components/ImageUpload";
 import InfoSection from "../components/About";
 import "./SharedImageTo.css";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 const ImageToCSV = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const extractedText = localStorage.getItem("extractedText");
-    if (!extractedText) {
-      navigate("/toCsv");
-    }
-  });
-
   return (
     <div className="container">
       <div className="text-center">
